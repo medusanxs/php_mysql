@@ -1,0 +1,18 @@
+mysql> describe users;
++----------------+--------------+------+-----+---------+-------+
+| Field          | Type         | Null | Key | Default | Extra |
++----------------+--------------+------+-----+---------+-------+
+| user_id        | int(11)      | YES  |     | NULL    |       |
+| first_name     | varchar(20)  | YES  |     | NULL    |       |
+| last_name      | varchar(30)  | YES  |     | NULL    |       |
+| email          | varchar(50)  | YES  |     | NULL    |       |
+| facebook_url   | varchar(100) | YES  |     | NULL    |       |
+| twitter_handle | varchar(20)  | YES  |     | NULL    |       |
++----------------+--------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> insert into users
+    -> values (1, "Mike", "Greenfield", "mike@greenfieldguitars.com",
+    -> "http://www.facebook.com/profile.php?id=699186223",
+    -> "@greenfieldguitars");
+Query OK, 1 row affected (0.00 sec)
